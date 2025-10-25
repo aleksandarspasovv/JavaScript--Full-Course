@@ -55,5 +55,10 @@ printName2('Alex', function(varibale){ //use function without giving it a name
 
 let sumArrow = (a, b) => {return a + b} //function = let and = to assign
 
+let miltiplyArrow = (a,b) => {return a * b};
+let divideArrow = (a,b) => {return a / b};
+let minusArrow = (a,b) => {return a - b ? a > b : b - a}
+
+
 
 
