@@ -61,4 +61,10 @@ let minusArrow = (a,b) => {return a - b ? a > b : b - a}
 
 
 
+// Type Coerction - converting from one type to another
 
+let aString = '1'
+parseInt(aString) //=> converts to Int
+
+const numberOne = 1
+console.log(numberOne.toString())
