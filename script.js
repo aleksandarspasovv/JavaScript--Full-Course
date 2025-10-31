@@ -68,3 +68,11 @@ parseInt(aString) //=> converts to Int
 
 const numberOne = 1
 console.log(numberOne.toString())
+
+// NaN
+
+const notANumber = 'asd'
+
+console.log(parseInt(notANumber)) // --> NaN
+
+console.log(isNaN(notANumber)) // --> used to check NaN
