@@ -76,3 +76,18 @@ const notANumber = 'asd'
 console.log(parseInt(notANumber)) // --> NaN
 
 console.log(isNaN(notANumber)) // --> used to check NaN
+
+// Arrays
+
+const firstArray = ['A', 'B', 'C', 'D', 'E']
+
+for (let i=0; i<firstArray.length; i++){
+    if (firstArray.length % 2 != 0){
+        console.log(firstArray[firstArray.length / 2])
+    } else {
+        console.log('Array not even')
+    }
+}
+
+// Objects
+
