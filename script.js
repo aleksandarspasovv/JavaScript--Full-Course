@@ -91,3 +91,26 @@ for (let i=0; i<firstArray.length; i++){
 
 // Objects
 
+let person = {
+    name: 'Alex',
+    age: 30,
+    favNumber: 22,
+    sayHi: function(){console.log('HI')},
+    sayHiSecondTime(){
+        console.log('Hi Hi') //jsut like a normal fuction without the keyword
+    },
+    address: {
+        city: 'Sofia',
+        street: 'ul.'
+    }
+}
+
+person.age += 1 //  to acces objectname + 
+person.sayHi()
+person.sayHiSecondTime()
+
+// Also [] can be used
+
+person['name'] ? console.log(person.name) : console.log('No anme avaliable')
+person.address.city = 'Varna'
+
