@@ -114,3 +114,65 @@ person.sayHiSecondTime()
 person['name'] ? console.log(person.name) : console.log('No anme avaliable')
 person.address.city = 'Varna'
 
+
+//Array Methods
+
+const array2 = [1, 2, 3, 4, 5]
+
+array2.forEach(number => { console.log(number)})
+
+array2.map(num => {return num * 2})
+
+
+array2.filter(num => num < 2)
+
+array2.find(2)
+
+array2.some(num => numm < 3)
+
+array2.reduce(sumArrow, number => {return sum + number}, 0)
+
+const items = [
+    {price: 10},
+    {price: 20},
+    {price: 1},
+    {price: 15},
+    {price: 7},
+]
+
+const total = items.reduce((sum, item) => {return sum + item.price}, 0)
+
+console.log(total)
+
+// String Template Literal
+
+let alex = 'Alex'
+let spasov = 'Spasov'
+
+console.log(`${alex} ${spasov}`)
+
+function User(name, age){
+    this.name = name
+    this.age = age 
+    this.isHuman = true
+}
+
+const user = new User('Alex', 30)
+
+console.log(user)
+
+class UserAsClass {
+    constructor(name, age){
+        this.name = name
+        this.age = age
+        this.isHuman = true
+    }
+
+    printName(){
+        console.log(this.name)
+    }
+}
+
+const userFromClass = new UserAsClass('MAgi', 25) //same as non Class
+
+
