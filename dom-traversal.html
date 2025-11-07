@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            color: black;
+        }
+        div > div {
+            margin-left: .5rem;
+            padding-left: .25rem;
+            border-left: 1px solid #777;
+        }
+    </style>
+    <script defer src="domTraversal.js"></script>
+</head>
+<body>
+    <div id="garnd-parent" class="grand-parent">
+        Grand Parent
+        <div>
+            Parent
+            <div>Child 1</div>
+            <div>Child 2</div>
+        </div>
+        <div>
+            parent 2
+        </div>
+    </div>
+    
+</body>
+</html>
