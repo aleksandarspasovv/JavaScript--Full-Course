@@ -11,12 +11,18 @@ form.addEventListener('click', e => {
     
     //1. Create a new item
     const item = document.createElement('div')
-    item.innerText = input.ariaValue
+    item.innerText = input.value
     item.classList.add('list-item')
 
     //2. Add that item to the list
     lsit.appendChild(item)
 
     //3. Clear Input
-    
+    input.value = ''
+
+    //4. Set Up Event Listnener to Delete item
+
+    item.addEventListener('click', () => {
+        item.remove()
+    })
 })
