@@ -69,3 +69,37 @@ function addEventListenerPromise(element, method){
         element.addEventListener(method, resolve)
     })
 }
+
+Promise.all([
+    Promise.resolve(1),
+    Promise.resolve(2),
+    Promise.resolve(3)
+]).then(messages => {
+    console.log(messages)
+})                              //we can pass an array of promises
+
+
+
+Promise.any() //catches the first success Promsie
+
+Promise.race() //the first promsie to be done
+
+Promise.allSettled() //retuns array of objects thats combiens both failure and success
+
+const finallyPromise = new Promise((resolve, reject) => {
+    const sum = 2
+
+    if (sum === 2) {
+        resolve('yes')
+    } else {
+        reject('no')
+    }
+})
+
+finallyPromise.then(message => {
+    console.log(message)
+}).catch(error => {
+    console.log(error)
+}).finally(finalMessage => {
+    console.log('Final message')
+})
