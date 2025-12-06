@@ -4,11 +4,16 @@
 //     console.log(data.map(user => user.name))
 // })
 
-async function printName() {
-    const rawData = await fetch('https://jsonplaceholder.typicode.com/users')
-    const jsonData = await rawData.json()
-    const result = await jsonData.map(user => user.name)
-    console.log(result)
-}
+// async function printName() {
+//     const rawData = await fetch('https://jsonplaceholder.typicode.com/users')
+//     const jsonData = await rawData.json()
+//     const result = await jsonData.map(user => user.name)
+//     console.log(result)
+// }
 
-printName()
+// printName()
+
+
+async function consoleLogData() {
+    const rawData = fetch('https://jsonplaceholder.typicode.com/users')
+}
