@@ -18,3 +18,4 @@ document.cookie = `age=30; expires=${date}`
 document.cookie = `name=; expires=${pastDate}` //to DELETE a cookie
 
 
+
