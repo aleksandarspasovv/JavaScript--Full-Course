@@ -10,3 +10,4 @@ function greet2(firsName, lastName, { salutation = 'Hi', sufix} = {}){ //default
 }
 
 greet2('Alexander', 'Spasov', {sufix: 'Mr'})
+
